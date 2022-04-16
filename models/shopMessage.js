@@ -1,9 +1,10 @@
 import mongoose from "mongoose";
 
-const foodSchema = mongoose.Schema({
+const shopSchema = mongoose.Schema({
     name: String,
-    price : String,
-    creator: String,
+    description : String,
+    location: String,
+    tags : [String],
     selectedFile : String,
     likeCount : {
         type: Number,
@@ -14,5 +15,6 @@ const foodSchema = mongoose.Schema({
         default : 0
     }
 });
-const FoodMessage = mongoose.model('FoodMessage' , foodSchema);
-export default FoodMessage;
+
+const ShopMessage = mongoose.model('ShopMessage' , shopSchema);
+export default ShopMessage;
