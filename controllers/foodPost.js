@@ -9,7 +9,9 @@ export const getFoodPost =async(req,res) =>{
     res.status(404).json({message: error.message});
    }
 }
-export const createFoodPost = async(req,res) =>{
+
+
+export const createFoodPost = async (req,res) =>{
     const post = req.body;
     const newPost = new FoodMessage(post);
     try {
