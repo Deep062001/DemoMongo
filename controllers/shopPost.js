@@ -4,12 +4,15 @@ import mongoose from "mongoose";
 export const getShopPost =async(req,res) =>{
    try {
        const shopMessages = await ShopMessage.find();
+       console.log("I reached Shop Posts");
        res.status(200).json(shopMessages);
        
    } catch (error) {
     res.status(404).json({message: error.message});
    }
+   
 }
+
 
 
 export const createShopPost = async (req,res) =>{

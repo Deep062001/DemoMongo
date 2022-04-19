@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 export const getFoodPost =async(req,res) =>{
    try {
        const foodMessages = await FoodMessage.find();
+       console.log("I reached Food Posts");
        res.status(200).json(foodMessages);
        
    } catch (error) {
