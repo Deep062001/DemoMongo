@@ -1,0 +1,210 @@
+@import '../../properties.scss';
+@import '../../variables.scss';
+
+.landing-outer-div{
+    display: flex;
+    flex-direction: row;
+    background-color: $main-bg-light-creme;
+    height: 88vh;
+    
+    .no-padding-margin{
+        margin: 0;
+        padding: 0;
+    }
+    .left-div{
+        width: 75vw;
+        padding: $title-align-left-padding;
+        position: relative;
+        
+        .food-transparent{
+            font-weight: 900;
+            font-size: 200px;
+            line-height: 150px;
+            color: $dark-blue;
+            opacity: 0.05;
+            z-index: 1;
+            position: relative;
+
+            @media screen and (max-width:1000px) {
+                line-height: 120px;
+                font-size: 120px;
+            }
+            
+
+        }
+
+        .landing-line{
+            font-weight: 700;
+            font-size: 4rem;
+            line-height: 4rem;
+            color: $dark-blue;
+            z-index: 1;
+            position: relative;
+            @media screen and (max-width:1000px) {
+                font-size: 2.3rem;
+                line-height: 2.3rem;
+            }
+        }
+
+        .dots-bg-img{
+            position: absolute;
+            right: 0;
+            top: 20px;
+            height: 38vh;
+            z-index: 0;
+        }
+
+        .img-below{
+            top : 44vh;
+            z-index: 0 !important;
+        }
+
+
+        .search-form-div{
+            z-index: 1;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            width: 20vw;
+            background-color: #fff;
+            height: 50px;
+            z-index: 1;
+            position: relative;
+
+            .search-input{
+                border: 0;
+                width: 70%;
+                padding: 5px;
+                padding: 0 10px;
+                font-weight: 400;
+                font-size: 14px;
+
+                &:focus{
+                    outline: none;
+                }
+
+                &::placeholder{
+                    color: rgba(54, 52, 52, 0.451);
+                }
+            }
+
+            .search-btn{
+                margin: 5px 0;
+                background-color: $main-green;
+                color: #fff;
+                font-weight: 600;
+                font-size: 16px;
+                text-align: center;
+                text-decoration: none;
+                vertical-align: middle;
+                padding: 8px;
+                border: 0;
+                width: 100%;
+                border-radius: 0  50px 0 0;
+                @include hover-animate;
+
+                &:hover{
+                    font-size: 18px;
+                    margin: 3px 0;
+                }
+
+            }
+
+            @media screen and (max-width:1000px) {
+                width: 150px;
+            }  
+        }
+
+        .location-div{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            left: 0;
+            bottom: 5%;
+            background-color: $main-green;
+            color: #fff;
+            font-weight: 500;
+            padding: 5px 30px 5px 10px;
+            border-radius: 0 50px 50px 0;
+
+            .icon{
+                padding: 2px;
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            padding-left: $title-align-left-padding-small;
+        }  
+    }
+
+    .right-div{
+        background-color: $main-green;
+        width: 25vw;
+        position: relative;
+    }
+
+    .display-food{
+        width: 45vw;
+        position: absolute;
+        right: 20px;
+        z-index: 2;
+
+        @media screen and (max-width:1000px) {
+            right: 5px;
+        }  
+    }
+
+
+    @media screen and (max-width:600px) {
+        height: 630px;
+
+        .left-div{
+            padding: $title-align-left-padding-small;
+            padding-top: 0;
+
+            .food-transparent{
+                font-size: 90px;
+                line-height: 90px;
+            }
+
+            .landing-line{
+                line-height: 1.7rem;
+                font-size: 1.7rem;
+            }
+
+            .location-div{
+                position: relative;
+                margin-top: 40px;
+                margin-left: -30px;
+                width: fit-content;
+            }
+
+            .dots-bg-img{
+                display: none;
+            }
+
+            .img-below{
+                display: block;
+                height: 250px;
+            }
+        }
+        
+
+        .display-food{
+            width: 350px;
+            bottom: 45px;
+        }
+    }  
+
+    @media screen and (max-width:470px) {
+
+        .display-food{
+            width: 300px;
+        }
+
+        .location-div{
+            font-size: 14px;
+        }
+    }
+}

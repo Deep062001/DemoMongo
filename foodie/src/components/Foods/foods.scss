@@ -1,0 +1,44 @@
+@import '../../properties.scss';
+@import '../../variables.scss';
+.grid {
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: $main-padding;
+    row-gap: 20px;
+    column-gap: 35px;
+    padding-left: 20px;
+}
+
+.foodpage {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    .food {
+        width: 350px;
+    }
+}
+
+.heading {
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 62px;
+    /* or 129% */
+
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    color: #2E266F;
+
+}

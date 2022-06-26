@@ -1,0 +1,11 @@
+@import '../../properties.scss';
+@import '../../variables.scss';
+
+.outer-div{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: $main-padding;
+    background-color: $main-bg-light-creme;
+}

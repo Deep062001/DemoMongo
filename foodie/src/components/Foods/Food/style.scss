@@ -1,0 +1,115 @@
+@import '../../../properties.scss';
+@import '../../../variables.scss';
+.food-card-div {
+
+    padding: 0;
+    width: 350px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    row-gap: 10px;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5) !important;
+
+    .food-img {
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+        top: 0;
+        padding: 0;
+    }
+
+    .text-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 350px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .overlay2 {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: 'white';
+    }
+    .name {
+
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        /* or 133% */
+
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+
+        color: #2E266F;
+    }
+
+    .price {
+
+        left: 420px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        /* or 133% */
+
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+
+        color: #35CD8C;
+
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+
+        button {
+            background-color: #35CD8C;
+            color: white;
+        }
+    }
+    @media screen and (max-width:400px) {
+        width: 100%;
+    
+        .food-img {
+            width: 100%;
+        }
+    
+        .text-div {
+            padding-left: 5px;
+        }
+    
+        button {
+            width: 120px !important;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.btn-flat {
+    background-color: #35CD8C;
+    color: white;
+}

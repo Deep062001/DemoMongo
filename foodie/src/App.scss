@@ -1,0 +1,7 @@
+@import './properties.scss';
+
+*{
+    box-sizing: border-box;
+    @include font-poppins;
+}
+

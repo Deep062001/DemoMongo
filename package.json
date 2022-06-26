@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+ 
   "scripts": {
-    "start": "nodemon index.js"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix foodie && npm run build --prefix foodie"
+  }, 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eternal-dreamer/FoodHunt_Server.git"

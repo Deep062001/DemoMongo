@@ -1,0 +1,120 @@
+@import '../../properties.scss';
+@import '../../variables.scss';
+
+.outer-card-div{
+    position: relative;
+    padding: 0;
+    width: 350px;
+
+    .shop-img{
+        margin: 0;
+        padding: 0;
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .details-div{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        border-radius: 0 0 10px 10px;
+        background-color: $transparent-green;
+        padding-left: 25px;
+        padding-top: 10px;
+        font-size: 12px;
+
+        .text-div{
+            width: 300px;
+            color: white;
+            h3{
+                font-size: 16px;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            p{
+                margin: 8px 0 ;
+            }
+
+            .icon{
+                padding: 3px;
+                margin-left: -5px;
+            }
+
+            .location-div{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                height: 18px;
+            }
+
+            @media screen and (max-width:470px) {
+                width: 250px;
+            }
+        }
+
+        .explore-dish-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            margin-bottom: 15px;
+            .location-div{
+                text-align: left;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                height: 18px;
+                width: 210px;
+            }
+            p{
+                margin: 8px 0 ;
+                color: #fff;
+            }
+
+            .icon{
+                padding: 3px;
+                margin-left: -5px;
+                color: #fff;
+            }
+            button{
+                padding: 8px 20px;
+                border-radius: 40px 0 0 40px;
+                background-color: white;
+                color: $main-green;
+                border: 0;
+                font-weight: 500;
+                width: fit-content;
+                height: 34px;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:400px) {
+        width: 100%;
+
+        .shop-img{
+            width: 100%;
+        }
+
+        .details-div{
+            padding-left: 5px;
+        }
+
+        button{
+            width: 120px !important;
+        }
+    }
+
+    
+
+}
